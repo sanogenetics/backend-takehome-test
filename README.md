@@ -45,7 +45,7 @@ You'll be writing an API that allows for uploading and retrieving genetic result
 Part 1 to parse the genetic data that is uploaded and store it for retrieval later.
 
 > [!IMPORTANT]
-> We're not looking to assess your knowledge of any databases here, you can just store data in-memory.
+> For this task, the choice of storage solution (e.g., SQL, in-memory object, file system, etc.) is entirely up to you. The focus is on how you create the abstraction, not on specific database expertise.
 
 Your API should implement the following endpoints:
 - `GET /individuals`: returns a list of individual IDs
