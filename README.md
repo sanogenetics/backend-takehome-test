@@ -1,24 +1,34 @@
 # Backend Take-home Test
 
-The task is split in two parts, the first part is to implement a parser for a proprietary genetic data format, and the
-second part is to implement an API that allows for retrieving genetic results stored in the proprietary format.
+The task is split in three parts:
+- The first part is to implement a parser for a proprietary genetic data format
+- The second part is to implement an API that allows for retrieving genetic results stored in the proprietary format.
+- The final part is a short loom video (~5 mins) outlining your solution
 
 You can complete this task in any programming language of your choice, but we ask that you use a language that you are 
 comfortable answering detailed questions about.
 
-We understand that balancing this task with other responsibilities is important, so we estimate that completing it should take around 3 to 4 hours.
+We understand that balancing this task with other responsibilities is important, so we estimate that completing it should take a few hours.
 While we suggest aiming for that time frame, feel free to exceed it if necessary, though we remain mindful of respecting your time.
 
-When reviewing your submission, we'll be looking for pragmatic solutions that are easy to understand and maintain. How you choose to test this
-is up to you, but we will be expecting a tested solution that covers some potential edge cases you can think of.
+We are interested in understanding how you would structure and architect production-grade backend code for a medium to large codebase. Please organize your solution in a way that reflects how you would build a maintainable service in a real production environment.
 
 > [!TIP]
 > This is a big task and you won't have time to implement everything perfectly in the suggested time frame, we understand (and expect) you to have
 > to make tradeoffs when implementing this, so aim to get a working solution and leave comments where you'd improve things if you had more
 > time.
 
-After you've completed the task, take a short [loom](https://www.loom.com/) video (~5 minutes) walking us through how you approached the problem,
-what you found difficult and any changes you'd make given you had longer to work on it. Put the loom URL in the README.md of your repo.
+## AI usage
+
+You're welcome to use AI tools whilst completing this task. We won't mark candidates down for using AI.
+
+What we do expect is that you fully own the submission:
+
+- you understand the code that you submit
+- you can explain your design and tradeoffs
+- you can discuss what you would improve with more time
+
+If you'd like to share how you used AI (for example what it helped with, what you refined, and what you verified yourself), that context is welcome in your submission.
 
 ### Part 1: Genetic Data Parser
 You'll be writing a parser for a proprietary genetic data format. The format is a text file whose format contains
@@ -59,6 +69,18 @@ described below:
 2. Show that the individual is present by querying the `GET /individuals` endpoint
 3. Upload some genetic data from a file to the individual via the `POST /individuals/individual123/genetic-data` endpoint
 4. Show that all the data is queryable via the `GET /individuals/individual123/genetic-data` endpoint, and then show that the filtering works successfully by calling the same endpoint again, but this time filtering for only 2 variants present in the file
+
+
+### Part 3: Loom video
+
+Create a short [loom](https://www.loom.com/) video (~5 minutes) walking us through your submission and include the link your README.
+
+This is your opportunity to explain the submission to the team. The content of the video is up to you, but we want to hear about your decision making process as an engineer as opposed to a demonstration of each endpoint.
+
+Try and include:
+- How you approached the problem, solutions considered, and the tradeoffs involved
+- What you found difficult
+- Any changes you'd make given you had longer to work on it
 
 ## Submitting Your Solution
 Please create a new private repository on GitHub and commit your solution to it. Once you're done, please invite 
